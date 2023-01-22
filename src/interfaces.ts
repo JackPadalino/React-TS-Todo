@@ -1,4 +1,5 @@
-export interface ITask {
-    taskName:string;
-    deadline:number
+export interface Task {
+    taskName:string,
+    deadline:number,
+    category:string
 };
