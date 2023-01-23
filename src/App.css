@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap:50px;
 }
 
 /* .header input {
@@ -42,53 +43,71 @@ body {
   cursor: pointer;
 } */
 
-.inputContainer{
+.createCategoryContainer{
   display:flex;
   align-items: center;
   height:50px;
-  background-color: green;
 }
 
-.inputContainer input{
+.createCategoryContainer input{
   width:200px;
   height:100%;
   padding-left: 10px;
   font-size: 15px;
 }
 
-.inputContainer select{
+.createCategoryContainer button{
+  width:50px;
+  height:56px;
+  font-size: 15px;
+}
+
+.createTodoContainer{
+  display:flex;
+  align-items: center;
+  height:50px;
+}
+
+.createTodoContainer input{
+  width:200px;
+  height:100%;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.createTodoContainer select{
   width:200px;
   height:56px;
   padding-left: 10px;
   font-size: 15px;
 }
 
-.inputContainer button{
+.createTodoContainer button{
   width:50px;
   height:56px;
   font-size: 15px;
 }
 
-.todoList {
+/* .todoList {
   flex: 70%;
   width: 100%;
   display: flex;
   align-items: center;
   padding-top: 50px;
   flex-direction: column;
-}
+  background-color: green;
+} */
 
 .task {
-  width: 500px;
-  height: 50px;
+  width: 100%;
+  height: 25px;
   display: flex;
   color: white;
-  margin: 15px;
 }
 
 .task .content {
-  flex: 80%;
   height: 100%;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +116,7 @@ body {
 .task .content span {
   display: grid;
   place-items: center;
-  border: 1px solid white;
-  width: 100%;
+  width: 80%;
   height: 100%;
   font-size: 18px;
   border-right: none;
@@ -106,10 +124,52 @@ body {
 }
 
 .task button {
-  width:50px;
+  width:20%;
   height: 100%;
   border: none;
   background-color: lightseagreen;
   color: white;
   cursor: pointer;
+}
+
+.categories {
+  flex: 70%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.category {
+  width: 300px;
+  /* height: 50px; */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 15px;
+}
+
+.category .name {
+  /* flex: 80%; */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5px;
+}
+
+.category .name span {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: tomato;
+}
+
+.category .todoList{
+  display:flex;
+  flex-direction: column;
+  gap:2.5px;
 }

@@ -1,5 +1,9 @@
-export interface Task {
+export interface TaskInt {
     taskName:string,
-    deadline:number,
-    category:string
+    todoCategory:string
+};
+
+export interface CategoryInt {
+    categoryName:string,
+    todoList:TaskInt[];
 };
